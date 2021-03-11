@@ -153,6 +153,8 @@ if(! file.exists('vectorSitesGenomicHeatMap.rds') || ! file.exists('vectorSitesE
   d <- data.frame(vectorSites)
   d$patient <- d$sampleName
   
+  browser()
+  
   if(dir.exists('vectorSitesHeatMap')) unlink('vectorSitesHeatMap')
   createGenomicHeatMapData(bind_rows(d, c), outputDir = 'vectorSitesHeatMap')
   sampleOrder <- c("ALS17-1","ALS17-2","ALS17-3","ALS20-1","ALS20-2","ALS20-3","BB305-1","BB305-2","BB305-3", 

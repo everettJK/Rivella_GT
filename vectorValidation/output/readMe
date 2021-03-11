@@ -1,3 +1,0 @@
- ~/ext/bcftools/bin/bcftools  mpileup -f ../data/expected.fasta alignment.filt.sorted.bam |  ~/ext/bcftools/bin/bcftools call -mv -Ob -o calls.bcf
-~/ext/bcftools/bin/bcftools view -i '%QUAL>=20' calls.bcf
-

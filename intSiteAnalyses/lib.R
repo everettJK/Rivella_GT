@@ -52,6 +52,8 @@ createEpiGenomicHeatMapData <- function(d, Rscript_path = '/home/opt/R-3.4.0/bin
               file = 'sites', col.names = FALSE, row.names = FALSE, sep = ',', append = TRUE, quote = FALSE)
   
   
+  browser() 
+  
   comm <- paste(Rscript_path, '~/ext/epigeneticHeatmapMaker/epi_heatmap_from_file.R samples ', 
                 '-c ~/ext/genomicHeatMapMaker/INSPIIRED.yml ',
                 '-t epiCellTypes',
